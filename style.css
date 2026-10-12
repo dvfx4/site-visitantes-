@@ -1746,3 +1746,44 @@ body {
   }
 }
     
+
+/* 🔧 CORREÇÃO DEFINITIVA DOS CARTÕES NO CELULAR */
+
+@media (max-width: 760px) {
+  .eventos .cards-grade,
+  .promocao-lista .cards-grade {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 18px;
+  }
+
+  .eventos .card-vazio,
+  .promocao-lista .card-vazio {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    padding: 25px !important;
+    overflow-wrap: break-word;
+    box-sizing: border-box !important;
+  }
+
+  .eventos .card-vazio h3,
+  .promocao-lista .card-vazio h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .eventos .card-vazio p,
+  .promocao-lista .card-vazio p {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+}
+    

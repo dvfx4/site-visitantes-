@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5d9cef">
+
+  <title>Estação Alegria | Lazer para toda a família</title>
+  <meta name="description" content="Venha curtir momentos especiais na Estação Alegria! Lazer, piscina e diversão para toda a família.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio" aria-label="Estação Alegria - início">
+      <span class="logo-icone">☀️</span>
+      <span>Estação <strong>Alegria</strong></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="menu" id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">O clube</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#promocoes">Promoções</a>
+      <a href="#avisos">Avisos</a>
+      <a class="menu-cta" href="#contato">Visite-nos!</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-conteudo">
+        <span class="etiqueta">☀️ Seu lugar de alegria!</span>
+
+        <h1>Sol, piscina e<br><span>momentos felizes!</span></h1>
+
+        <p>
+          Um lugar para relaxar, brincar e criar lembranças incríveis
+          com quem você ama.
+        </p>
+
+        <div class="hero-botoes">
+          <a href="#contato" class="botao botao-branco">Quero conhecer <span>→</span></a>
+          <a href="#galeria" class="botao botao-transparente">Ver fotos 📸</a>
+        </div>
+
+        <div class="hero-detalhes">
+          <span>💦 Diversão</span>
+          <span>👨‍👩‍👧‍👦 Família</span>
+          <span>🌴 Lazer</span>
+        </div>
+      </div>
+
+      <div class="hero-ilustracao" aria-hidden="true">
+        <div class="sol">☀️</div>
+        <div class="nuvem nuvem-1">☁️</div>
+        <div class="nuvem nuvem-2">☁️</div>
+        <div class="boia">🛟</div>
+        <div class="palmeira">🌴</div>
+        <div class="piscina">
+          <span class="onda onda-1">〰️</span>
+          <span class="onda onda-2">〰️</span>
+          <span class="bola">🏐</span>
+        </div>
+        <div class="flor">🌺</div>
+      </div>
+
+      <div class="onda-base"></div>
+    </section>
+
+    <section class="sobre secao" id="sobre">
+      <div class="sobre-imagem">
+        <div class="sobre-cartao">
+          <span>🌞</span>
+          <strong>Seu próximo<br>dia feliz começa aqui!</strong>
+        </div>
+      </div>
+
+      <div class="sobre-texto">
+        <span class="subtitulo">BEM-VINDO À ESTAÇÃO ALEGRIA</span>
+        <h2>Mais que um clube,<br><span>um lugar de boas lembranças.</span></h2>
+        <p>
+          Reúna a família, chame os amigos e aproveite momentos de
+          descanso e diversão. A Estação Alegria é um espaço para
+          curtir o dia, se refrescar e aproveitar a companhia de quem
+          faz bem.
+        </p>
+
+        <div class="sobre-lista">
+          <div><span>✓</span> Momentos em família</div>
+          <div><span>✓</span> Diversão para aproveitar o dia</div>
+          <div><span>✓</span> Um ambiente para relaxar</div>
+        </div>
+
+        <a class="botao botao-azul" href="#contato">Venha conhecer →</a>
+      </div>
+    </section>
+
+    <section class="beneficios">
+      <div class="beneficio">
+        <span>🏊</span>
+        <h3>Dia de piscina</h3>
+        <p>Um convite para se refrescar e relaxar.</p>
+      </div>
+      <div class="beneficio">
+        <span>🧒</span>
+        <h3>Diversão para crianças</h3>
+        <p>Espaço para brincar e aproveitar.</p>
+      </div>
+      <div class="beneficio">
+        <span>🍔</span>
+        <h3>Comidinhas</h3>
+        <p>Confira as opções da nossa lanchonete.</p>
+      </div>
+      <div class="beneficio">
+        <span>❤️</span>
+        <h3>Tempo em família</h3>
+        <p>Crie lembranças com quem você ama.</p>
+      </div>
+    </section>
+
+    <section class="secao galeria-secao" id="galeria">
+      <div class="cabecalho-secao">
+        <span class="subtitulo">UM POUCO DO NOSSO ESPAÇO</span>
+        <h2>Olha só que <span>alegria!</span></h2>
+        <p>Confira alguns momentos e conheça melhor a Estação Alegria.</p>
+      </div>
+
+      <div class="galeria" id="galeriaGrid">
+        <div class="galeria-vazio">
+          <span>📸</span>
+          <h3>Nossa galeria está sendo preparada!</h3>
+          <p>Em breve, fotos do nosso espaço aparecerão por aqui.</p>
+        </div>
+      </div>
+
+      <p class="nota-galeria">
+        As fotos publicadas pelo clube poderão aparecer aqui quando a galeria
+        estiver conectada ao painel administrativo.
+      </p>
+    </section>
+
+    <section class="faixa-azul">
+      <span class="faixa-emoji">🌴</span>
+      <div>
+        <h2>Seu próximo momento especial está esperando!</h2>
+        <p>Chame a família e venha viver um dia diferente.</p>
+      </div>
+      <a class="botao botao-branco" href="#contato">Saiba mais →</a>
+    </section>
+
+    <section class="secao novidades" id="eventos">
+      <div class="cabecalho-secao">
+        <span class="subtitulo">FIQUE POR DENTRO</span>
+        <h2>Agenda de <span>eventos</span> 🎉</h2>
+        <p>Veja as novidades e os eventos divulgados pelo clube.</p>
+      </div>
+
+      <div class="cards-grade" id="eventosLista">
+        <article class="card-vazio">
+          <span>🎈</span>
+          <h3>Novidades em breve!</h3>
+          <p>Assim que houver eventos publicados, eles aparecerão nesta seção.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao promocoes-secao" id="promocoes">
+      <div class="cabecalho-secao">
+        <span class="subtitulo">APROVEITE</span>
+        <h2>Promoções e <span>novidades</span> 🎁</h2>
+        <p>Fique de olho nas ofertas e nas novidades da Estação Alegria.</p>
+      </div>
+
+      <div class="cards-grade" id="promocoesLista">
+        <article class="card-vazio">
+          <span>🎁</span>
+          <h3>Vem novidade por aí!</h3>
+          <p>As promoções divulgadas pelo clube serão exibidas aqui.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao avisos-secao" id="avisos">
+      <div class="cabecalho-secao">
+        <span class="subtitulo">INFORMAÇÕES IMPORTANTES</span>
+        <h2>Fique ligado nos <span>avisos!</span> 📢</h2>
+        <p>Consulte os comunicados publicados pela equipe do clube.</p>
+      </div>
+
+      <div class="avisos-lista" id="avisosLista">
+        <article class="aviso-vazio">
+          <span>📌</span>
+          <div>
+            <h3>Nenhum aviso publicado no momento</h3>
+            <p>Volte mais tarde para conferir as informações atualizadas.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <div class="contato-conteudo">
+        <span class="subtitulo">VAMOS COMBINAR?</span>
+        <h2>Esperamos você na<br><span>Estação Alegria!</span></h2>
+        <p>
+          Entre em contato para tirar dúvidas sobre visitas, funcionamento
+          e informações do clube.
+        </p>
+
+        <div class="contato-botoes">
+          <a class="botao botao-branco" id="whatsappLink" href="#" target="_blank" rel="noopener noreferrer">
+            💬 Falar pelo WhatsApp
+          </a>
+          <a class="botao botao-instagram" id="instagramLink"
+             href="https://www.instagram.com/estacao_alegria_oficial/"
+             target="_blank" rel="noopener noreferrer">
+            📸 Nosso Instagram
+          </a>
+        </div>
+
+        <p class="contato-observacao">
+          Consulte diretamente o clube para confirmar horários, valores e disponibilidade.
+        </p>
+      </div>
+      <div class="contato-desenho" aria-hidden="true">🌊 🏖️ 🩴</div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <a class="logo logo-rodape" href="#inicio">
+      <span class="logo-icone">☀️</span>
+      <span>Estação <strong>Alegria</strong></span>
+    </a>
+
+    <p>Feito para celebrar os bons momentos. 💙</p>
+
+    <a href="https://www.instagram.com/estacao_alegria_oficial/"
+       target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+
+    <small>© <span id="anoAtual"></span> Estação Alegria</small>
+  </footer>
+</body>
+  </html>

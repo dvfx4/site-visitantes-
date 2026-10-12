@@ -1787,3 +1787,317 @@ body {
   }
 }
     
+
+/* =========================================
+   ESTAÇÃO ALEGRIA — LAYOUT PC E ANDROID
+   Coloque no FINAL do style.css
+========================================= */
+
+/* 💻 COMPUTADOR E TELAS GRANDES */
+@media (min-width: 761px) {
+  .topo {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero {
+    grid-template-columns: 1.1fr .9fr;
+    gap: 50px;
+    padding: 90px 7% 95px;
+  }
+
+  .hero-conteudo {
+    max-width: 650px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .secao {
+    width: min(1160px, 88%);
+  }
+
+  .estrutura-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .eventos .cards-grade,
+  .promocao-lista .cards-grade {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .eventos .card-vazio,
+  .promocao-lista .card-vazio {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    padding: 28px;
+    overflow-wrap: anywhere;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* 💻 NOTEBOOKS E TABLETS DEITADOS */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .menu {
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: .76rem;
+  }
+
+  .estrutura-grid,
+  .eventos .cards-grade,
+  .promocao-lista .cards-grade {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    gap: 25px;
+  }
+}
+
+/* 📱 ANDROID E CELULARES */
+@media (max-width: 760px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .topo {
+    width: 100%;
+    min-height: 72px;
+    padding: 10px 5%;
+    gap: 12px;
+  }
+
+  .logo {
+    min-width: 0;
+    font-size: .72rem;
+    letter-spacing: .4px;
+  }
+
+  .logo-simbolo {
+    flex-shrink: 0;
+  }
+
+  .menu-toggle {
+    flex-shrink: 0;
+  }
+
+  .menu {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 55px 6% 80px;
+    gap: 25px;
+  }
+
+  .hero-conteudo,
+  .hero-visual {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 10vw, 3.8rem);
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hero-conteudo > p {
+    font-size: 1rem;
+  }
+
+  .hero-botoes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-botoes .botao {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 310px;
+    padding: 10px 0;
+  }
+
+  .visual-cartao {
+    width: calc(100% - 25px);
+    max-width: 390px;
+    min-width: 0;
+  }
+
+  .visual-piscina {
+    width: 100%;
+  }
+
+  .secao {
+    width: 88%;
+    max-width: 100%;
+    padding: 65px 0;
+  }
+
+  .sobre {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .estrutura-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  /* CORREÇÃO PRINCIPAL DOS CARTÕES */
+  .eventos .cards-grade,
+  .promocao-lista .cards-grade {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    align-items: stretch;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 18px;
+  }
+
+  .eventos .card-vazio,
+  .promocao-lista .card-vazio {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    padding: 24px !important;
+    box-sizing: border-box !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .eventos .card-vazio h3,
+  .promocao-lista .card-vazio h3 {
+    color: #18334c !important;
+    font-size: 1.25rem;
+    line-height: 1.45;
+    white-space: normal;
+  }
+
+  .eventos .card-vazio p,
+  .promocao-lista .card-vazio p {
+    color: #5d7185 !important;
+    font-size: 1rem;
+    line-height: 1.7;
+    white-space: normal;
+  }
+
+  .eventos {
+    width: 100%;
+    padding: 65px 6%;
+  }
+
+  .galeria {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  .galeria img {
+    width: 100%;
+    height: 230px;
+  }
+
+  .cabecalho-flex {
+    display: block;
+  }
+
+  .cabecalho-flex > p {
+    margin-top: 15px;
+  }
+
+  .promocao-banner {
+    width: 100%;
+    padding: 28px 22px;
+  }
+
+  .promocao-texto {
+    min-width: 0;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .promocao-detalhe {
+    display: none;
+  }
+
+  .contato-botoes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contato-botoes .botao {
+    width: 100%;
+  }
+
+  .rodape-final {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* 📱 ANDROID COM TELA PEQUENA */
+@media (max-width: 380px) {
+  .logo {
+    font-size: .64rem;
+  }
+
+  .logo-simbolo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .hero-info {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-info-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .eventos .card-vazio,
+  .promocao-lista .card-vazio {
+    padding: 20px !important;
+  }
+}
+    

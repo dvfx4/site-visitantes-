@@ -1584,4 +1584,165 @@ body {
     border-radius: 22px;
   }
 }
+
+/* 📱 AJUSTES DE ESPAÇAMENTO PARA CELULARES */
+
+@media (max-width: 760px) {
+  /* Evita que os ícones encolham */
+  .estrutura-icone,
+  .info-icone,
+  .logo-simbolo {
+    flex-shrink: 0;
+  }
+
+  /* Mais espaço nos cartões */
+  .estrutura-card {
+    padding: 24px;
+    min-height: 220px;
+  }
+
+  .estrutura-icone {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+  }
+
+  .estrutura-card h3 {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    padding-right: 12px;
+  }
+
+  .estrutura-card p {
+    font-size: .95rem;
+    line-height: 1.65;
+    padding-right: 8px;
+  }
+
+  .estrutura-card > a {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  /* Ícones e textos do topo */
+  .hero-info {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .hero-info-item {
+    min-width: 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-info-item strong,
+  .hero-info-item small {
+    overflow-wrap: anywhere;
+  }
+
+  /* Cartão decorativo da piscina */
+  .hero-visual {
+    min-width: 0;
+    padding: 12px 0;
+  }
+
+  .visual-cartao {
+    max-width: calc(100% - 24px);
+  }
+
+  .visual-piscina {
+    height: 190px;
+  }
+
+  .visual-boia {
+    width: 70px;
+    height: 70px;
+    border-width: 14px;
+    right: 25px;
+  }
+
+  .selo-verao {
+    left: -3px;
+    bottom: 0;
+  }
+
+  /* Cartões de eventos e promoções */
+  .card-vazio {
+    padding: 25px;
+    min-width: 0;
+  }
+
+  .card-vazio h3,
+  .card-vazio p {
+    overflow-wrap: anywhere;
+  }
+
+  .card-icone {
+    line-height: 1.5;
+    margin: 16px 0 10px;
+  }
+
+  /* Evita elementos decorativos apertando o texto */
+  .promocao-texto {
+    max-width: 100%;
+    padding-right: 5px;
+  }
+
+  .promocao-detalhe {
+    opacity: .25;
+    pointer-events: none;
+  }
+
+  .contato-botoes {
+    gap: 16px;
+  }
+
+  .contato-botoes .botao {
+    min-height: 52px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* 📱 CELULARES PEQUENOS */
+
+@media (max-width: 380px) {
+  .hero-info {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .hero-info-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-visual {
+    min-height: 290px;
+  }
+
+  .visual-piscina {
+    height: 160px;
+  }
+
+  .selo-verao {
+    width: 72px;
+    height: 72px;
+  }
+
+  .selo-verao strong {
+    font-size: 1.2rem;
+  }
+
+  .estrutura-card {
+    padding: 21px;
+  }
+
+  .promocao-banner {
+    padding: 27px 21px;
+  }
+}
     

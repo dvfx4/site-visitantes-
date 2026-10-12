@@ -773,3 +773,46 @@ img {
 .faixa-azul .cards-grade .card-vazio span {
   color: #18344a !important;
 }
+/* CORRIGIR CONTRASTE DOS CARTÕES DE EVENTOS E PROMOÇÕES */
+
+.card-vazio {
+  background: #ffffff !important;
+  color: #18344a !important;
+  border: 1px solid #d5e8f5 !important;
+  box-shadow: 0 10px 28px rgba(7, 57, 99, 0.08);
+}
+
+.card-vazio h3,
+.card-vazio h4,
+.card-vazio p,
+.card-vazio span,
+.card-vazio strong {
+  color: #18344a !important;
+}
+
+.faixa-azul .card-vazio {
+  background: #ffffff !important;
+  color: #18344a !important;
+}
+
+.faixa-azul .card-vazio h3,
+.faixa-azul .card-vazio h4,
+.faixa-azul .card-vazio p,
+.faixa-azul .card-vazio span,
+.faixa-azul .card-vazio strong {
+  color: #18344a !important;
+}
+
+.galeria-vazio,
+.aviso-vazio {
+  background: #ffffff !important;
+  color: #18344a !important;
+  border-color: #d5e8f5 !important;
+}
+
+.galeria-vazio h3,
+.galeria-vazio p,
+.aviso-vazio h3,
+.aviso-vazio p {
+  color: #18344a !important;
+}

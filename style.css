@@ -748,3 +748,28 @@ img {
     transition-duration: 0.01ms !important;
   }
 }
+
+.faixa-azul .cards-grade h3,
+.faixa-azul .cards-grade h4,
+.faixa-azul .cards-grade strong,
+.faixa-azul .cards-grade span,
+.faixa-azul .cards-grade p,
+.faixa-azul .card-vazio h3,
+.faixa-azul .card-vazio h4,
+.faixa-azul .card-vazio p {
+  color: #ffffff !important;
+}
+
+.faixa-azul .cards-grade .card-vazio {
+  background: #ffffff;
+  border: 1px solid #dceaf5;
+  color: #18344a;
+}
+
+.faixa-azul .cards-grade .card-vazio h3,
+.faixa-azul .cards-grade .card-vazio h4,
+.faixa-azul .cards-grade .card-vazio p,
+.faixa-azul .cards-grade .card-vazio strong,
+.faixa-azul .cards-grade .card-vazio span {
+  color: #18344a !important;
+}
